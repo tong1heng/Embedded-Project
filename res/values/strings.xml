@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, EmbeddedProjectActivity!</string>
+        
+    <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">EmbeddedProject</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="input_username">请输入您的账号</string>
+    <string name="input_password">请输入您的密码</string>
+    <string name="input_phonenumber">请输入您的手机号</string>
+    <string name="text_username">用户名:</string>
+    <string name="text_password">密   码:</string>
+    <string name="text_phonenumber">手机号:</string>
+    <string name="text_main">欢迎使用！</string>
+    <string name="design">Designed by: 仝一恒，马兆佳，周志达</string>
 
 </resources>

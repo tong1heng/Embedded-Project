@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".WelcomeActivity"
+     android:background="@drawable/welcome"
+     android:orientation="vertical"
+     >
+	 
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+ 
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:gravity="center">
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:gravity="center">
+         </LinearLayout>
+     </LinearLayout>
+ 
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+ 
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:gravity="center">
+ 
+             <Button
+ 
+                 android:id="@+id/btn_wel_login"
+                 android:layout_marginTop="50dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/login"
+                 android:textSize="20sp"
+                 android:background="@color/red"
+                 android:textColor="@color/white"
+                 />
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:gravity="center">
+ 
+             <Button
+                 android:id="@+id/btn_wel_register"
+                 android:layout_marginTop="50dp"
+                 android:textSize="20sp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/register"
+                 android:background="@color/grey"
+                 android:textColor="@color/white"
+                 />
+         </LinearLayout>
+     </LinearLayout>
+ 
+ 	<TextView 
+	    android:text="@string/design"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:textColor="@color/white"/>
+</LinearLayout>
