@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:textColor="@android:color/black"
+		android:textSize="15sp"
+		android:text="请将NFC卡片置于实验箱NFC模块处" />
+	   
+    <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+        
+        <TextView 
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:text="NFC识别结果：" />
+        
+        <TextView 
+        android:id="@+id/txt_nfc_result"
+       	android:layout_width="fill_parent"
+       	android:textSize="15sp"
+       	android:layout_marginTop="30dp"
+       	android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+        <Button
+	        android:id="@+id/btn_nfc_find"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="200dp"
+	        android:layout_marginRight="4dp"
+	        android:background="@drawable/rounded_button"
+	        android:text="识别NFC" />
+        <Button
+	        android:id="@+id/btn_nfc_light_open"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="200dp"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginRight="4dp"
+	        android:background="@drawable/rounded_button"
+	        android:text="开门" />
+        <Button
+	        android:id="@+id/btn_nfc_light_close"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="200dp"
+	        android:layout_marginLeft="4dp"
+	        android:background="@drawable/rounded_button"
+	        android:text="关门" />
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

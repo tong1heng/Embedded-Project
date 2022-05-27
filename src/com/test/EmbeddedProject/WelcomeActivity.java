@@ -29,6 +29,7 @@ public class WelcomeActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent(WelcomeActivity.this,LoginActivity.class);
 				startActivity(intent);
+				overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 			}
 		});
         button2.setOnClickListener(new OnClickListener() {
@@ -37,6 +38,7 @@ public class WelcomeActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent(WelcomeActivity.this,RegisterActivity.class);
 				startActivity(intent);
+				overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 			}
 		});
     }

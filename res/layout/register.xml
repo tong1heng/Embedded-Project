@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_and_register"
+    android:background="@drawable/bg"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -110,6 +110,7 @@
 	        android:layout_height="wrap_content"
 	        android:text="@string/register"
 	        android:textColor="@color/white"
+	        android:background="@drawable/rounded_button1"
 	        android:layout_marginTop="10sp"
 	        android:textSize="20sp"
 	        android:layout_gravity="center_horizontal"/>

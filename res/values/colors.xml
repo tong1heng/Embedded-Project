@@ -7,6 +7,10 @@
     <color name="tmp">#B22222</color>
     <color name="pink">#EEE5DE</color>
     
+    <color name="light_blue">#92B4EC</color>
+    <color name="light_orange">#FFE69A</color>
+    <color name="deep_orange">#FFD24C</color>
+    
 	<color name="bg_color">#EDEDED</color>
 	<color name="contents_text">#ff000000</color>
 	<color name="encode_view">#ffffffff</color>

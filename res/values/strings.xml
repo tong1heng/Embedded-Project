@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        
+
     <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">EmbeddedProject</string>
     <string name="login">登录</string>
@@ -11,7 +11,7 @@
     <string name="text_username">用户名:</string>
     <string name="text_password">密   码:</string>
     <string name="text_phonenumber">手机号:</string>
-    <string name="text_main">欢迎使用！</string>
-    <string name="design">Designed by: 仝一恒，马兆佳，周志达</string>
-
+    <string name="text_main">欢迎使用</string>
+    <string name="design">Designed by: 仝一恒、马兆佳、周志达</string>
+    <string name="title">门禁综合控制系统</string>
 </resources>
