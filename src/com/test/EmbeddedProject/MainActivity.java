@@ -62,6 +62,7 @@ public class MainActivity extends Activity {
 				show_data();
 				Intent intent=new Intent(MainActivity.this,CameraActivity.class);
 				startActivity(intent);
+				overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 			}
 		});
 		
@@ -73,6 +74,7 @@ public class MainActivity extends Activity {
 				show_data();
 				Intent intent=new Intent(MainActivity.this,NfcActivity.class);
 				startActivity(intent);
+				overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 			}
 		});
     }
@@ -86,7 +88,6 @@ public class MainActivity extends Activity {
 	}
 	
 	private void show_data(){
-		
 		textView1_1=(TextView)findViewById(R.id.txt_main_db1_1);
 		textView2_1=(TextView)findViewById(R.id.txt_main_db2_1);
 		textView1_2=(TextView)findViewById(R.id.txt_main_db1_2);

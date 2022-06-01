@@ -52,6 +52,7 @@ private Button button1=null;
 					db.insert("user", null, values);
 					Intent intent=new Intent(RegisterActivity.this,WelcomeActivity.class);
 					startActivity(intent);
+					overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 					finish();
 					Toast.makeText(RegisterActivity.this, "×¢²á³É¹¦£¡", Toast.LENGTH_SHORT).show();
 				}

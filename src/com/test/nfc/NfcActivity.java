@@ -132,14 +132,12 @@ public class NfcActivity extends Activity{
 							e.printStackTrace();
 						}
 						
-						
 						// TODO: 让所有的东西off
 						led_closed();
 						moto_opp(0);
 						light(0);
 						beep(1);
 						Toast.makeText(NfcActivity.this, "已开门", Toast.LENGTH_SHORT).show();
-						
 						
 						s="";
 						isOpen = true;
@@ -148,14 +146,6 @@ public class NfcActivity extends Activity{
 					} else {
 						Toast.makeText(NfcActivity.this, "已开门", Toast.LENGTH_SHORT).show();
 					}
-					
-//				}else if (s.equals(nfc2)) {
-//					led_open(1);
-//					moto_opp(2);//向右旋转
-//					light(2);
-//					beep();
-//					Toast.makeText(NfcActivity.this, "LED 1 已点亮", Toast.LENGTH_SHORT).show();
-//					s="";
 				}else if (s.equals("")){
 					Toast.makeText(NfcActivity.this, "请先扫描NFC！", Toast.LENGTH_SHORT).show();
 				}else {
@@ -168,8 +158,6 @@ public class NfcActivity extends Activity{
 		// 关门
 		button3.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				
-				
 				if (s.equals(nfc1) || s.equals(nfc2) || s.equals(nfc3)) {
 					if (isOpen){
 						// TODO : 让所有的东西 on
@@ -177,8 +165,8 @@ public class NfcActivity extends Activity{
 						led_open(1);
 						led_open(2);
 						led_open(3);
-						moto_opp(2);//向左旋转
-						light(0);
+						moto_opp(2);//向右旋转
+//						light(2);
 						beep(0);
 						Toast.makeText(NfcActivity.this, "正在关门", Toast.LENGTH_SHORT).show();
 						
@@ -190,7 +178,6 @@ public class NfcActivity extends Activity{
 							e.printStackTrace();
 						}
 						
-						
 						// TODO: 让所有的东西off
 						led_closed();
 						moto_opp(0);
@@ -198,22 +185,13 @@ public class NfcActivity extends Activity{
 						beep(1);
 						Toast.makeText(NfcActivity.this, "已关门", Toast.LENGTH_SHORT).show();
 						
-						
 						s="";
 						isOpen = false;
 						light(2);
 					} else {
 						Toast.makeText(NfcActivity.this, "已关门", Toast.LENGTH_SHORT).show();
 					}
-					
 				}
-				
-				
-				// TODO Auto-generated method stub
-//				led_closed();
-//				moto_opp(0);
-//				light(0);
-//				Toast.makeText(NfcActivity.this, "LED 已全部熄灭", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}

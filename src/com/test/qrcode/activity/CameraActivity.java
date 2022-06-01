@@ -51,7 +51,7 @@ public class CameraActivity extends Activity {
 					Toast.makeText(CameraActivity.this, "«Îœ»…®¬Î", Toast.LENGTH_SHORT).show();
 					return;
 				}
-				if(scanResult.equals("0")){
+				if(scanResult.equals("Others")){
 					LedDeviceIoctl(1, 0);
 					beep();
 					Toast.makeText(CameraActivity.this, "LED 1 “—µ„¡¡", Toast.LENGTH_SHORT).show();
